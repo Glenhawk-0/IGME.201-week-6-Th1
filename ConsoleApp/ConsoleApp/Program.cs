@@ -34,6 +34,10 @@
             Console.WriteLine("Which path do you chose?");
             Console.WriteLine("Type 'left' to choose the path and go left or type 'right' to choose the cave and go right.");
 
+            //user input choice
+            userChoice = Console.ReadLine();
+            Console.WriteLine("\nYou chose: " + userChoice + "\n");
+
         }//end static void
     }//end internal class
 }//end
