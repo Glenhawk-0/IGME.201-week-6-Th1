@@ -41,29 +41,35 @@
             if (userChoice == "left")
             {
                 //Go to the left
+                Console.WriteLine("You take the path to the left. It leads you out of the jungle. You are safe to adventure another day!");
 
             }
             else if (userChoice == "right")
             {
                 //Go to the right
+                Console.WriteLine("You take the path to the right. It leads you into a cave. There is a cave in and you are trapped!");
             }
             else
             {
                 //Oh no! the user typed in something else.
                 userChoice = "NONE";
+
                 while (userChoice != "left" && userChoice != "right" && userChoice != "up")
                 {
-                    Console.WriteLine("Please enter either 'left', 'right', or our now super    secret answer of 'up'.");
+                    Console.WriteLine("Please enter either 'left', 'right', or our now super secret answer of 'up'.");
                     userChoice = Console.ReadLine();
                     Console.WriteLine("\nYou chose: " + userChoice + "\n");
                 }
+
                 if (userChoice == "left")
                 {
                     //Go to the left
+                    Console.WriteLine("You take the path to the left. It leads you out of the jungle. You are safe to adventure another day!");
                 }
                 else if (userChoice == "right")
                 {
                     //Go to the right
+                    Console.WriteLine("You take the path to the right. It leads you into a cave. There is a cave in and you are trapped!");
                 }
                 else if (userChoice == "up")
                 {
@@ -75,7 +81,6 @@
                     Console.WriteLine("I honestly don't know how you got here. Congrats.");
                 }
             }
-
         }//end static void
-    }//end internal class
+    }// end internal class
 }//end
